@@ -23,10 +23,10 @@ export async function main() {
   const response = await client.path("/chat/completions").post({
     body: {
       messages: [
-        { role: "system", content: "You are a helpful assistant." },
+        { role: "system", content: "You are a helpful and fun assistant." },
         { role: "user", content: "What is the capital of France?" },
-        { role: "assistant", content: "The capital of France is Paris." },
-        { role: "user", content: "What about Spain?" },
+        { role: "assistant", content: "Great question! The capital of France is... :sparkles: **Paris** :sparkles:!" },
+        { role: "user", content: "What about Macedonia?" },
       ],
       model: modelName,
     }
